@@ -13,6 +13,7 @@
   <body>
     <!-- HTML -->
     <div class="container">
+      <img src="https://pbs.twimg.com/profile_images/1107412563724242944/n1qnBgC2_400x400.jpg" alt="Avatar">
       <article id="instagram"><span class="load flash animated">LOADING...</span></article>
 
       <div class="bio">
@@ -24,35 +25,7 @@
         </ul>
       </div>
 
-      <article id="tweet"><span class="load flash animated">LOADING...</span></article>
-
     </div>
-
-    <!-- Templates -->
-    <script id="instagram" type="text/html">
-      {{#rows}}
-        <div class="one-gram"><img src="{{instasource}}" width="150"></div>
-
-      {{/rows}}
-    </script>
-
-    <script id="tweet" type="text/html">
-      {{#rows}}
-        <p><span class="quote">&ldquo;</span> {{{tweet}}} <span class="quote"> &rdquo;</span></p>
-
-      {{/rows}}
-    </script>
-
-    <!-- JavaScript -->
-      <script type="text/javascript">
-        document.addEventListener('DOMContentLoaded', function() {
-          var URL  = '0Ao5u1U6KYND7dG9CRWdjeVB6dGYyN3c3RktocExUV1E' // insta
-          var URL2 = '0Ao5u1U6KYND7dDd2RTBwajZrT3pEc2p2LVVWc0o0WVE' // tweet
-
-          Tabletop.init({ key: URL,  callback: buildInsta,  simpleSheet: true })
-          Tabletop.init({ key: URL2, callback: buildTweet,  simpleSheet: true })
-        })
-      </script>
 
   </body>
 </html>
